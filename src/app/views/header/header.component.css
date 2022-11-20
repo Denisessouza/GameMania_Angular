@@ -1,0 +1,107 @@
+header {
+  background-color: black;
+  color: white;
+  height: 120px;
+
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#menu_01 a {
+  color: white;
+  font-size: 18px;
+  font-family: Inconsolata;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+
+
+}
+
+.menu img {
+  width: 30px;
+
+  /*Menu de hamburguer*/
+}
+
+.login_carrinho img{
+width: 30px;
+}
+
+#barras {
+  display: none;
+}
+
+.icone_menu {
+  width: 40px;
+}
+
+@media screen and (max-width: 834px){
+
+  .menu {
+      display: none;
+      flex-direction:column;
+      justify-content: space-around;
+      justify-content: center;
+      background-color: #080808;
+      position:absolute;
+      top: 92px;
+      left: 0px;
+      padding: 30px;
+      border-radius: 10px;
+  }
+
+
+  #barras {
+      display: inline-block;
+
+  }
+
+  .menu_01-ativo{
+      display: flex;
+  }
+
+
+  .cabecalho {
+      background-color: #080808;
+      position: relative;
+
+  }
+
+
+  .logo {
+      width:min-content;
+
+
+  }
+
+  .barra-busca {
+      width: fit-content;
+
+
+
+  }
+
+
+  }
+

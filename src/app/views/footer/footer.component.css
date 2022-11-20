@@ -1,0 +1,15 @@
+.footer {
+  background-color: #000000;
+  height: 180px;
+  color: antiquewhite;
+  font-family: inconsolata;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+
+}
+.imglista {
+  width: 20px;
+}
