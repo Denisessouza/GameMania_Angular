@@ -18,5 +18,5 @@ export class LoginComponent implements OnInit {
   receberDados(){
     console.log(this.userModel)
   }
-
+    // Enviar os dados para API
 }
