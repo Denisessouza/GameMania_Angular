@@ -1,9 +1,21 @@
+import { User } from './../models/user';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
+
+  url = "http://localhost:3000/login";
+
+  login(usuario:User): Observable <any>{
+    return this.httpClient.post(this.url, JSON.stringify(usuario),{
+      headers: ({'content-type': 'application/json'}),
+      observe: "response"
+    })
+  }
 }

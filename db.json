@@ -1,19 +1,16 @@
 {
-  "posts": [
+  "users": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "nome": "Denise",
+      "email": "denise@email.com",
+      "password": "senha123",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "email": "joao@email.com",
+      "password": "$2a$10$f1uy/NUXs0ELlAZA9PJZi.H7N/S3PzPH8B7RuzYrnate7SN4aigEO",
+      "nome": "João Luciano",
+      "id": 2
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

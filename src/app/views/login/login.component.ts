@@ -1,3 +1,4 @@
+import { LoginService } from './../../services/login.service';
 import { User } from './../../models/user';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor( private loginService: LoginService) { }
 
   ngOnInit(): void {
   }
@@ -17,6 +18,15 @@ export class LoginComponent implements OnInit {
 
   receberDados(){
     console.log(this.userModel)
-  }
     // Enviar os dados para API
+
+    this.loginService.login(this.userModel).subscribe( (response) => {
+      console.log("response:",response)
+    }, (erro) => {
+      console.log(erro)
+    })
+
+  }
+
+
 }
