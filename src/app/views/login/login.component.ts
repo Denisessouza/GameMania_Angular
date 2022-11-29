@@ -20,10 +20,9 @@ export class LoginComponent implements OnInit {
     console.log(this.userModel)
     // Enviar os dados para API
 
-    this.loginService.login(this.userModel).subscribe( (response) => {
-      console.log("response:",response)
-    }, (erro) => {
-      console.log(erro)
+    this.loginService.login(this.userModel).subscribe({
+      next: (response) => { console.log(response) },
+      error: (erro) => {console.log(erro)}
     })
 
   }

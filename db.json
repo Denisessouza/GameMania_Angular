@@ -11,6 +11,16 @@
       "password": "$2a$10$f1uy/NUXs0ELlAZA9PJZi.H7N/S3PzPH8B7RuzYrnate7SN4aigEO",
       "nome": "João Luciano",
       "id": 2
+    },
+    {
+      "email": "eduardo@email.com",
+      "password": "$2a$10$qR.SyQxmOeZz1uEc9hBQQes77wOxml92QaBi7.Q3/7sADT9Yr3.EW",
+      "id": 3
+    },
+    {
+      "email": "marcelo@email.com",
+      "password": "$2a$10$ngiAMh/CEki8WTkC.XPTmeNp2bnAv7x.TNz7XAE/iexg3DqG3lice",
+      "id": 4
     }
   ]
 }
